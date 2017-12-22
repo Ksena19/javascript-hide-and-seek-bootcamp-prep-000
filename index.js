@@ -1,3 +1,9 @@
 function getFirstSelector(selector) {
-  return selector[0];
+  for (i = 0; i < selector.length; i++) {
+    return selector[0];
+  }
+  }
+
+function nestedTarget() {
+  
 }
