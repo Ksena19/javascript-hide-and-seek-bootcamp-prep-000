@@ -14,10 +14,11 @@ function getFirstSelector(selector) {
  }
 
  function deepestChild() {
-   var grandNode = document.querySelector('#grand-node');
-   var deepestNode = grandNode.children[0];
-   for (var i = 0; !deepestNode.children[i]; i) {
-     deepestNode = deepestNode.children[0]
-   }
-   return deepestNode;
+     var cur = document.getElementById('grand-node')
+   var i = 0
+    while (cur.firstElementChild) {
+      i = i + 1
+      cur = cur.firstElementChild
+    }
+     return cur
  }
